@@ -18,6 +18,13 @@
                 controllerAs: 'vm',
                 data: { activeTab: 'home' }
             })
+            .state('chat', {
+                url: '/chat',
+                templateUrl: 'chat/index.html',
+                controller: 'Chat.IndexController',
+                controllerAs: 'vm',
+                data: { activeTab: 'chat' }
+            })
             .state('account', {
                 url: '/account',
                 templateUrl: 'account/index.html',

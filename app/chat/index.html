@@ -1,1 +1,40 @@
-﻿<h1>{{vm.user.firstName}}'s Chat</h1>
+
+<style type="text/css">
+<script src="chat/main.js"></script>
+
+  body {
+    padding: 10px;
+  }
+  #chat-output {
+    height: 150px;
+    overflow-y: scroll;
+  }
+</style>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="alert alert-info">You are <strong id="whoami"></strong></div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Online Users</div>
+        <div class="list-group" id="online-users"></div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">Live Chat</div>
+        <ul class="list-group" id="chat-output"></ul>
+        <div class="panel-body">
+          <form id="chat">
+            <div class="input-group">
+              <input type="text" class="form-control" id="chat-input" />
+              <span class="input-group-btn">
+                <button type="submit" class="btn btn-default">Send Message</button>
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
