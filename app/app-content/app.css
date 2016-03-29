@@ -1,7 +1,21 @@
 ﻿body {
     padding: 20px 0;
+    background: #83a4d4; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #83a4d4 , #b6fbff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #83a4d4 , #b6fbff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .flash-message {
     margin-top: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #FFFFFF;
+  text-align:center
+}
+
+a {
+  color: #FFFFFF;
 }
